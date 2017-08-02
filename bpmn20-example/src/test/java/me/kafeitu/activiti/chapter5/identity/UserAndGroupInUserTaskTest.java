@@ -79,7 +79,7 @@ public class UserAndGroupInUserTaskTest extends AbstractTest {
         taskService.claim(task.getId(), "henryyan");
         taskService.complete(task.getId());
     }
-
+    
     @Test
     @Deployment(resources = {"chapter5/userAndGroupInUserTask.bpmn"})
     public void testUserTaskWithGroupContainsTwoUser() throws Exception {
